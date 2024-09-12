@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        if ("geolocation" in navigator) {
+
+            navigator.geolocation.getCurrentPosition((position) => {
+
+                console.log(
+
+                    `User current coordinates la=${position.coords.latitude},
+    lo=${position.coords.longitude}`
+
+                );
+
+            });
+
+        } else {
+
+            console.log("geolocation is not available");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

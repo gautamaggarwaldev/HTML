@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form method="post" novalidate enctype="application/x-www-form-urlencoded" target="_blank">
+        <!-- use of step -->
+        <label id="dozen">Quantity</label>
+        <input type="number" step="12" id="dozen" name="weight"/>
+
+        <!-- use of autofocus -->
+        <label for="user">Username</label>
+        <input type="text" id="user" name="username" autofocus>
+
+        <!-- multiple file input -->
+        <br/>
+        <br/>
+        <label for="file">Upload Multiple files :</label>
+        <input type="file" id="file" name="fileid" multiple accept=".pdf,.jpeg">
+        
+        <!-- use of readonly -->
+        <label for="readonlyID">Only read this id :</label>
+        <input type="number" id="readonlyID" name="id" value="1236874510" readonly>
+
+        <!-- use of disabled -->
+        <label for="name">Real name: </label>
+        <input type="text" id="name" name="naam" value="Garima" disabled>
+
+        <!-- use of checkbox -->
+        <br/>
+        <br/>
+        <label for="male">Male:</label>
+        <input type="checkbox" id="male" name="male" checked>
+        <label for="female">Female:</label>
+        <input type="checkbox" id="female" name="female">
+        <label for="other">Other:</label>
+        <input type="checkbox" id="other" name="other">
+
+        <!-- use of radio -->
+        <br/>
+        <br/>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="selected">
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="selected">
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="selected">
+
+        <!-- use of color -->
+        <br/><label for="color">Choose your color:</label>
+        <input type="color" id="color" name="color">
+
+        <!-- use of image -->
+        <br/>
+        <input type="image" src="https://img.freepik.com/premium-vector/submit-button_592324-13660.jpg"
+        width="70px" height="100px" alt="Submit">
+
+        <!-- use of month -->
+        <br><label for="month">Your birthday month</label>
+        <input type="month" id="month" name="select">
+
+        <!-- use of range -->
+        <label for="volControl">Volume Control :</label>
+        <input type="range" id="volControl" min="0" max="100" step="1" name="vol" value="50">
+
+        <!-- use of search -->
+        <label for="searchbar">Search Tab:</label>
+        <input type="search" id="searchbar" placeholder="search anything.." name="query">
+
+        <!-- use of tel -->
+        <label for="mobilenumber">Contact Number :</label>
+        <input type="tel" id="mobilenumber" name="usernumber" placeholder="enter mobile number..">
+
+        <!-- use of url -->
+        <br><br>
+        <label for="link">Website URL</label>
+        <input type="url" id="link" placeholder="url.." name="url">
+
+        <!-- use of minlength & maxlength -->
+        <label for="name">Enter name at least 3 character :</label>
+        <input type="text" id="name" name="name" minlength="3" maxlength="6" size="100">
+
+        <br/><input type="submit" value="submit">
+        <br/><input type="reset" value="reset">
+    </form>
+
+
+</body>
+</html>
